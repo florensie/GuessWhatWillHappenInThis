@@ -13,7 +13,7 @@ Fabric mod where anyone can PR anything, concerning or not (no NSFW content). I'
 
 ## Dependencies
 
-This mod depends on Fabric API, Cloth Config and includes ARRP
+This mod depends on Fabric API, Cloth Config and includes ARRP and ExpandAbility
 
 For colored lighting, you will need to install this mod https://modrinth.com/mod/colored-lights
 

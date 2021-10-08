@@ -24,6 +24,7 @@ repositories {
     maven { url 'https://storage.googleapis.com/devan-maven/' }
     maven { url 'https://raw.githubusercontent.com/Devan-Kerman/Devan-Repo/master/' }
     maven { url 'https://server.bbkr.space/artifactory/libs-release' }
+    maven { url 'https://maven.florens.be' }
     mavenCentral()
 }
 
@@ -50,6 +51,7 @@ dependencies {
 	//modRuntime "me.shedaniel:RoughlyEnoughItems-fabric:$rei_version"
 
 	include modImplementation("com.enderzombi102:JythonMC:$jythonmc_version")
+    modImplementation include("be.florens:expandability-fabric:$expandability_version")
 
 	//Fixes bug in shadow
 	implementation('org.vafer:jdependency:2.7.0') {

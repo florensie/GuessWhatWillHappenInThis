@@ -65,6 +65,7 @@
   "text.autoconfig.gwwhit.option.gameplay.stoneBlocksAreInfected": "All Stone Blocks are Infested",
   "text.autoconfig.gwwhit.option.gameplay.killCulling": "Kill Culling",
   "text.autoconfig.gwwhit.option.gameplay.mobsMayExplode": "Mobs may Explode When Mating",
+  "text.autoconfig.gwwhit.option.gameplay.fluidPhysics": "Force fluid physics on or off",
   "text.autoconfig.gwwhit.option.gameplay.items": "Items",
   "text.autoconfig.gwwhit.option.gameplay.items.everythingIsEdible": "Everything is Edible",
   "text.autoconfig.gwwhit.option.gameplay.items.hiddenItemsTab": "Hidden Items Creative Tab",

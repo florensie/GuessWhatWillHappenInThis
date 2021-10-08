@@ -3,6 +3,7 @@ package fr.anatom3000.gwwhit.config.data;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
+import net.fabricmc.fabric.api.util.TriState;
 
 @Config(name = "gameplay")
 public class GameplayConfig implements ConfigData {
@@ -19,6 +20,7 @@ public class GameplayConfig implements ConfigData {
     public boolean randomizedDrops = false;
     @ConfigEntry.Gui.Tooltip(count = 2)
     public boolean dreamLuck = false;
+    public TriState fluidPhysics = TriState.DEFAULT;
 
     public static class Items {
         @ConfigEntry.Gui.RequiresRestart

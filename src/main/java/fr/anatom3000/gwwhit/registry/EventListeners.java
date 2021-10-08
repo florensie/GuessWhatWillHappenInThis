@@ -1,7 +1,9 @@
 package fr.anatom3000.gwwhit.registry;
 
+import be.florens.expandability.api.fabric.PlayerSwimCallback;
 import fr.anatom3000.gwwhit.GWWHIT;
 import fr.anatom3000.gwwhit.config.ConfigManager;
+import fr.anatom3000.gwwhit.config.data.GameplayConfig;
 import fr.anatom3000.gwwhit.config.data.MiscConfig;
 import fr.anatom3000.gwwhit.event.PlayerDeathEvent;
 import fr.anatom3000.gwwhit.util.CheatCodes;
@@ -19,6 +21,7 @@ import net.minecraft.item.Items;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 
 import static fr.anatom3000.gwwhit.GWWHIT.getId;
@@ -77,6 +80,9 @@ public class EventListeners {
                         )
                 )
         );
+
+        // Fluids physics are overrated
+        PlayerSwimCallback.EVENT.register(player -> ConfigManager.getActiveConfig().gameplay.fluidPhysics);
     }
 
     public static void registerClient() {
